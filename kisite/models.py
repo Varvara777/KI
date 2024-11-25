@@ -11,9 +11,11 @@ class Tovar(models.Model):
         ('GRL3_6','Девочки 3-6'),
         ('BOY3_6','Мальчики 3-6'),
         ('GRL7_13','Девочки 7-13'),
-        ('GRL7_13','Девочки 7-13'),
+        ('GRL7_13','Мальчики 7-13'),
         ('ForParents','Настолки для мам и пап')
 
     ]
     type=models.CharField(choices=TYPE,max_length=15,default='DO3',verbose_name='Тип')
 
+    def __str__(self):
+        return self.title
