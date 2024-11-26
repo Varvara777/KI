@@ -1,15 +1,16 @@
-{%extends 'main.html'%}
+{% extends 'main.html' %}
 {% load static %}
 {% block content %}
 <!-- slider_area_start -->
 <div class="slider_area">
     <div class="slider_active owl-carousel">
         <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
+            <img src="{% static 'img/one.png' %}" alt="">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-9 col-md-9 col-md-12">
                         <div class="slider_text text-center">
-                            <h3>Свежая и вкусная еда<br />Для вашего здоровья</h3>
+                            <h3>Лучшие игрушки для ваших детей<br />По самым низким ценам</h3>
                         </div>
                     </div>
                 </div>
@@ -20,7 +21,7 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-9 col-md-9 col-md-12">
                         <div class="slider_text text-center">
-                            <h3>Свежая и вкусная еда<br />Для вашего здоровья</h3>
+                            <h3>Лучшие игрушки для ваших детей<br />По самым низким ценам</h3>
                         </div>
                     </div>
                 </div>
@@ -31,7 +32,7 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-9 col-md-9 col-md-12">
                         <div class="slider_text text-center">
-                            <h3>Свежая и вкусная еда<br />Для вашего здоровья</h3>
+                            <h3>Лучшие игрушки для ваших детей<br />По самым низким ценам</h3>
                         </div>
                     </div>
                 </div>
@@ -106,7 +107,7 @@
                                     <div class="icon">
                                         <i class="flaticon-lunch"></i>
                                     </div>
-                                    <h4>Ужин</h4>
+                                    <h4>Дети до 3 лет</h4>
                                 </div>
                             </a>
                         </li>
@@ -116,7 +117,7 @@
                                     <div class="icon">
                                         <i class="flaticon-food"></i>
                                     </div>
-                                    <h4>Завтрак</h4>
+                                    <h4>Дети 4-7 лет</h4>
                                 </div>
                             </a>
                         </li>
@@ -126,7 +127,7 @@
                                     <div class="icon">
                                         <i class="flaticon-kitchen"></i>
                                     </div>
-                                    <h4>Обед</h4>
+                                    <h4>Дети 8-13 лет</h4>
                                 </div>
                             </a>
                         </li>
@@ -137,13 +138,13 @@
 
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-
+                {% include 'tovaritems.html' with menu=tovar_do3 %}
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-
+                {% include 'tovaritems.html' with menu=tovar_do7 %}
             </div>
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-
+                {% include 'tovaritems.html' with menu=tovar_do13 %}
             </div>
         </div>
 
