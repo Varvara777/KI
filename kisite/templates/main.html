@@ -52,8 +52,8 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a class="active" href="{% url 'index' %}">Главная</a></li>
-                                        <li><a href="about.html">О нас</a></li>
-                                        <li><a href="contacts.html">Контакты</a></li>
+                                        <li><a href="{% url 'about' %}">О нас</a></li>
+                                        <li><a href="{% url 'contacts' %}">Контакты</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -131,8 +131,8 @@
                         </h3>
                         <ul>
                             <li><a href="{% url 'index' %}">Главная</a></li>
-                            <li><a href="about.html">О нас</a></li>
-                            <li><a href="contacts.html">Контакты</a></li>
+                            <li><a href="{% url 'about' %}">О нас</a></li>
+                            <li><a href="{% url 'contacts' %}">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
